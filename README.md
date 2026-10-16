@@ -14,6 +14,13 @@ Il foglio di stile definisce colori, spaziature e disposizione fissa della pagin
 
 le variabili personalizzate in `:root` raccolgono i colori e si richiamano con `var(...)`. I selettori, per esempio `.product-card`, scelgono quali elementi stilizzare. `display: grid` dispone le schede in colonne, mentre `display: flex` allinea elementi in una riga o colonna. `:hover` applica uno stile al passaggio del cursore; `::before` mostra un contenuto decorativo prima del contenuto HTML. Le regole `@media` possono adattare gli stili a condizioni specifiche, come la preferenza per il movimento ridotto.
 
+Non sono riuscito a completare l'evidenziatore dei box, inserito 
+*::selection {
+  background: #1c1fe1;
+  color: #fff;
+}
+ma non sono riuscito a far si che si evidenzino anche i box di categorie più le voci categoria, tralasciando "scopri di più" di Casa come el video. 
+
 ## JavaScript
 
 I prodotti sono salvati in un array di oggetti. La pagina genera le schede prodotto e aggiorna il contatore del carrello quando si preme il pulsante.
@@ -21,3 +28,5 @@ I prodotti sono salvati in un array di oggetti. La pagina genera le schede prodo
 `const` dichiara dati che non vengono riassegnati, come l'elenco dei prodotti; `let` dichiara valori che possono cambiare. Ogni prodotto è un oggetto con proprietà, per esempio `prezzo`, `rating` e `disponibile`. Le funzioni, come `formattaPrezzo()` e `stelline()`, raccolgono operazioni riutilizzabili e possono ricevere dati tramite parametri e restituire un risultato con `return`.
 
 Il ciclo `for` ripete un'operazione per ogni prodotto; `if/else` sceglie quale blocco eseguire. `filter()` crea un nuovo elenco che contiene solo gli elementi che rispettano una condizione. Con `document.querySelector()` si trova un elemento HTML; `createElement()`, `innerHTML` e `appendChild()` servono a creare e inserire le schede prodotto. `addEventListener("click", ...)` collega un'azione al clic. Il contatore del carrello usa una funzione interna che conserva il numero degli articoli tra un clic e l'altro.
+
+Stampa in console vuota. 

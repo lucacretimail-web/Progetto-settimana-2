@@ -152,7 +152,7 @@ function renderProdotti(lista) {
     scheda.innerHTML =
       '<div class="product-image">' + prodotto.immagine + "</div>" +
       "<p>" + prodotto.descrizione + "</p>" +
-      '<div class="rating">' + stelline(prodotto.rating) + " (" + prodotto.rating.toFixed(1) + ")</div>" +
+      '<div class="rating">' + stelline(prodotto.rating) + ' <span>(' + prodotto.rating.toFixed(1) + ')</span></div>' +
       '<span class="price">' + formattaPrezzo(prodotto.prezzo) + "</span>" +
       '<button class="add-cart-btn">Aggiungi al carrello</button>';
 
@@ -181,4 +181,4 @@ function creaContatoreCarrello() {
 
 let aggiungiAlCarrello = creaContatoreCarrello();
 
-
+renderProdotti(prodotti);
